@@ -5,6 +5,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div>
+            {/* nav bar initialize */}
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container p-2">
                     <a className="navbar-brand fs-3" href="/home"> World Tech Summit</a>
@@ -26,6 +27,8 @@ const Header = () => {
                                 <a className="nav-link fs-5" href="/activities">Activities</a>
                             </li>
                         </ul>
+
+                        {/* search button  */}
                         <form className="d-flex flex-fill mx-5">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-danger" type="submit">Search</button>

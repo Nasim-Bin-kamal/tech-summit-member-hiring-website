@@ -7,6 +7,8 @@ const Member = (props) => {
         <div>
             <div className="col p-1 border rounded-3 border-info">
                 <div className="card h-100">
+
+                    {/* single member information  */}
                     <img src={img} className="card-img-top rounded-circle mx-auto my-3" alt="..." style={{ width: "200px", height: "200px" }} />
                     <div className="card-body">
                         <h5 className="card-title">Name: {name}</h5>
@@ -20,6 +22,8 @@ const Member = (props) => {
                             onClick={() => props.handleAddMember(props.member)}
                         ><i className="fas fa-user-plus"></i> Hire Member</button>
                     </div>
+
+                    {/* social icons  */}
                     <div className="card-footer d-flex justify-content-around">
                         <i className="fab fa-instagram-square fa-2x" style={{ cursor: "pointer" }}></i>
                         <i className="fab fa-facebook-square fa-2x" style={{ cursor: "pointer" }}></i>
