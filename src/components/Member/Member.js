@@ -17,11 +17,12 @@ const Member = (props) => {
                         <p className="card-text">Age: {age}</p>
                         <p className="card-text">Country: {country}</p>
                         <p className="card-text">Honorarium: ${honorarium}</p>
-                        <button
-                            className="btn btn-primary"
-                            onClick={() => props.handleAddMember(props.member)}
-                        ><i className="fas fa-user-plus"></i> Hire Member</button>
+
                     </div>
+                    <button
+                        className="btn btn-primary mx-auto my-3"
+                        onClick={() => props.handleAddMember(props.member)}
+                    ><i className="fas fa-user-plus"></i> Hire Member</button>
 
                     {/* social icons  */}
                     <div className="card-footer d-flex justify-content-around">
