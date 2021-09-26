@@ -1,0 +1,11 @@
+.card {
+  background-color: #c5fffca8;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card:hover {
+  background-color: rgb(138, 245, 245);
+}
+.fab {
+  color: rgba(71, 68, 241, 0.815);
+}

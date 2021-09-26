@@ -1,9 +1,11 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
+import './Header.css'
 
 const Header = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container p-2">
                     <a className="navbar-brand fs-3" href="/home"> World Tech Summit</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +28,17 @@ const Header = () => {
                         </ul>
                         <form className="d-flex flex-fill mx-5">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-success" type="submit">Search</button>
+                            <button className="btn btn-danger" type="submit">Search</button>
                         </form>
                     </div>
                 </div>
             </nav>
+
+            {/* summit banner  */}
+            <div>
+                <Banner />
+            </div>
+
         </div>
     );
 };

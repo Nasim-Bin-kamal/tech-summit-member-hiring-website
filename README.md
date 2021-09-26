@@ -1,10 +1,13 @@
-# Getting Started with Create React App
+# WORLD TECH SUMMIT 2021
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Project Features:
 
-In the project directory, you can run:
+1. This project is based on a Tech summit.
+2. Here we can add member for the summit.
+3. Total hired members are displayed on the summary.
+4. Also the total spendings can be calculate.
 
 ### `npm start`
 

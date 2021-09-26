@@ -4,7 +4,7 @@ import Summary from '../Summary/Summary';
 
 const MainInfo = () => {
     const [members, setMembers] = useState([]);
-    const [memberCount, setMemberCount] = useState([]);
+    const [addedMembers, setAddedMembers] = useState([]);
     useEffect(() => {
         fetch('./data.json')
             .then(res => res.json())
@@ -12,14 +12,19 @@ const MainInfo = () => {
     }, []);
 
     const handleAddMember = member => {
-        const newMember = [...memberCount, member];
-        setMemberCount(newMember);
+        let newMembers = [...addedMembers];
+        const existingMember = addedMembers.find(addMember => addMember.id === member.id);
+        if (!existingMember) {
+            newMembers = [...addedMembers, member];
+        }
+        setAddedMembers(newMembers);
+
     }
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-9">
-                    <h2 className="my-3">Members</h2>
+                    <h2 className="my-3 text-primary">Members</h2>
                     <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
 
                         {
@@ -32,8 +37,8 @@ const MainInfo = () => {
                     </div>
 
                 </div>
-                <div className="col-md-3">
-                    <Summary memberCount={memberCount}></Summary>
+                <div className="col-md-3 mt-5">
+                    <Summary addedMembers={addedMembers}></Summary>
                 </div>
             </div>
 
