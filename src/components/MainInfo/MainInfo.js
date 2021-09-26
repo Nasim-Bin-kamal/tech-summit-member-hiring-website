@@ -23,7 +23,7 @@ const MainInfo = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-md-9">
+                <div className="col-sm-1 col-md-9 mx-auto">
                     <h2 className="my-3 text-primary">Members</h2>
                     <div className="row row-cols-1 row-cols-md-3 g-4 my-3">
 

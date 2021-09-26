@@ -4,7 +4,7 @@ Project Live Site Link [World Tech Summit-2021](https://world-tech-summit.netlif
 
 ## Project Features:
 
-1. This project is based on a Tech summit.
-2. Here we can add member for the summit.
-3. Total hired members are displayed on the summary.
-4. Also the total spendings can be calculate.
+- This project is based on a Tech summit.
+- Here we can add member for the summit.
+- Total hired members are displayed on the summary.
+- Also the total spendings can be calculate.
